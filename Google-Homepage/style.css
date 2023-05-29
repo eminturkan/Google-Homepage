@@ -38,28 +38,27 @@ html {
     justify-content: space-between;
     width:  30px;
     text-decoration-style: solid;
+
 }
 .li .top-li1 {
     display: inline-block;
-    color: black;
     padding: 5px;
     border-radius: 5px;
+    color: #5f6368;
 } 
 
 #navbar .top-li1:hover {
-    text-decoration: underline;
     background-color: gainsboro;
 }
 .li .top-li2 {
     margin-left: 20px;
     display: inline-block;
-    color: black;
     display: inline-block;
     padding: 5px;
+    color: #5f6368;
 
 } 
 #navbar .top-li2:hover {
-    text-decoration: underline;
     background-color: gainsboro;
     border-radius: 5px;
 }
@@ -87,16 +86,40 @@ html {
     transform: scale(1.1);
 }
 .search-box {
-    margin-left: 30px;
+    position: relative;
 }
 .search-input {
     margin-top: 5%;
     padding: 5px;
     border: 1px solid gainsboro;
     border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 480px;
     height: 40px;
 }
+.icons {
+    position: absolute;
+    top: 37%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    cursor: pointer;
+    
+}
+.icons i:first-child {
+    left: 415px; /* Sol taraftaki ikonun konumu */
+  }
+.icons i:nth-child(2) {
+    left: 450px; /* Sağ taraftaki ikonun konumu */
+}
+  .icons i:last-child {
+    left: 15px; /* Sağ taraftaki ikonun konumu */
+  }
+
 .search-btn {
     display: flex;
     justify-content: center;
@@ -111,6 +134,7 @@ html {
     text-align: center;
     width: 130px;
     height: 30px;
+    color: #202124;
 }
 
 .sbtn2 {
@@ -122,6 +146,7 @@ html {
     text-align: center;
     width: 200px;
     height: 30px;
+    color: #202124;
 }
 .sbtn1:hover {
     background-color: gainsboro;
